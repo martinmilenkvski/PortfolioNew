@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <main
-      className="flex min-h-screen flex-col items-center justify-between p-8 bg-cover bg-center bg-no-repeat"
+      className="flex min-h-screen flex-col items-start justify-start p-8 bg-cover bg-center bg-no-repeat"
       style={{
         backgroundImage: "url('/back.jpg')",
       }}
@@ -47,9 +47,68 @@ export default function Home() {
           </button>
         </div>
       </nav>
-      <header>
-        <h1 className="text-9xl font">Hello</h1>
-      </header>
+
+      {/* Hero Section */}
+      <div className="relative px-6 lg:px-12 pt-12 lg:pt-20 flex justify-center">
+        <div className="absolute left-8 top-32 h-full flex items-center">
+          <div className="flex h-full gap-4 font-mono items-center flex-col">
+            <div className="writing-mode-vertical text-sm tracking-wider text-gray-500">
+              2025
+            </div>
+            {/* Vertical line */}
+            <div className="w-px bg-gray-300 h-3/5"></div>
+            <div className="writing-mode-vertical text-sm tracking-wider text-gray-500 uppercase">
+              Portfolio
+            </div>
+          </div>
+        </div>
+
+        <div className="flex items-center justify-center mx-auto">
+          {/* Left Content */}
+          <div className="space-y-8 lg:pl-12 flex flex-col">
+            {/* Statistics */}
+            <div className="flex gap-12 mb-12">
+              <div>
+                <div className="text-4xl lg:text-5xl font-light text-black">
+                  +200
+                </div>
+                <div className="text-sm text-gray-600 mt-1">
+                  Project completed
+                </div>
+              </div>
+              <div>
+                <div className="text-4xl lg:text-5xl font-light text-black">
+                  +50
+                </div>
+                <div className="text-sm text-gray-600 mt-1">
+                  Startups raised
+                </div>
+              </div>
+            </div>
+
+            {/* Main Heading */}
+            <div className="space-y-4">
+              <h1 className="text-7xl lg:text-8xl xl:text-9xl font-light text-black leading-none">
+                Hello
+              </h1>
+              <p className="text-lg text-gray-600 font-light">
+                — It's Martin, your frontend developer
+              </p>
+            </div>
+          </div>
+
+          {/* Right Content - Portrait */}
+          <div className="relative w-1/2">
+            <div className="aspect-[3/4] relative overflow-hidden">
+              <img
+                src="/Avatar.png"
+                alt="Martin"
+                className="object-cover object-center grayscale"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
   );
 }
