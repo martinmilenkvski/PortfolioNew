@@ -6,7 +6,6 @@ export default function Home() {
         backgroundImage: "url('/back.jpg')",
       }}
     >
-      {/* ...existing code... */}
       <nav className="w-full">
         <div className="flex items-center justify-between mb-8 w-full">
           <div className="text-2xl font-bold">NA®G</div>
@@ -49,64 +48,30 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <div className="relative px-6 lg:px-12 pt-12 lg:pt-20 flex justify-center">
-        <div className="absolute left-8 top-32 h-full flex items-center">
-          <div className="flex h-full gap-4 font-mono items-center flex-col">
-            <div className="writing-mode-vertical text-sm tracking-wider text-gray-500">
-              2025
-            </div>
-            {/* Vertical line */}
-            <div className="w-px bg-gray-300 h-3/5"></div>
-            <div className="writing-mode-vertical text-sm tracking-wider text-gray-500 uppercase">
-              Portfolio
-            </div>
+
+      <div className="absolute left-8 top-32 h-full flex items-center">
+        <div className="flex h-full gap-4  items-center flex-col">
+          <div className="writing-mode-vertical text-sm tracking-wider text-gray-500">
+            2025
+          </div>
+
+          <div className="w-px bg-gray-300 h-3/5"></div>
+          <div className="writing-mode-vertical text-sm tracking-wider text-gray-500 uppercase">
+            Portfolio
           </div>
         </div>
+      </div>
 
-        <div className="flex items-center justify-center mx-auto">
-          {/* Left Content */}
-          <div className="space-y-8 lg:pl-12 flex flex-col">
-            {/* Statistics */}
-            <div className="flex gap-12 mb-12">
-              <div>
-                <div className="text-4xl lg:text-5xl font-light text-black">
-                  +200
-                </div>
-                <div className="text-sm text-gray-600 mt-1">
-                  Project completed
-                </div>
-              </div>
-              <div>
-                <div className="text-4xl lg:text-5xl font-light text-black">
-                  +50
-                </div>
-                <div className="text-sm text-gray-600 mt-1">
-                  Startups raised
-                </div>
-              </div>
-            </div>
-
-            {/* Main Heading */}
-            <div className="space-y-4">
-              <h1 className="text-7xl lg:text-8xl xl:text-9xl font-light text-black leading-none">
-                Hello
-              </h1>
-              <p className="text-lg text-gray-600 font-light">
-                — It's Martin, your frontend developer
-              </p>
-            </div>
+      <div className="flex justify-between items-center w-full h-full mt-8 p-8">
+        <div className="flex flex-col justify-center items-center  w-1/2">
+          <h1 className="text-[150px] font-medium">Hello</h1>
+          <div className="flex flex-col items-start">
+            <p className="text-lg font-semibold">I'm a passionate developer.</p>
+            <p className="text-2xl font-bold mt-2">Martin</p>
           </div>
-
-          {/* Right Content - Portrait */}
-          <div className="relative w-1/2">
-            <div className="aspect-[3/4] relative overflow-hidden">
-              <img
-                src="/Avatar.png"
-                alt="Martin"
-                className="object-cover object-center grayscale"
-              />
-            </div>
-          </div>
+        </div>
+        <div className="flex flex-col justify-center items-center w-1/2">
+          <img src="/Avatar.png" alt="Martin" />
         </div>
       </div>
     </main>
