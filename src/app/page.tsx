@@ -194,7 +194,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <ImageSlider id={""} title={""} subtitle={""} imageUrl={""} />
+      <ImageSlider/>
     </main>
     
   );
